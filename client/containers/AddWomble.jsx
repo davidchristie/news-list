@@ -19,7 +19,7 @@ let AddWomble = ({ dispatch }) => {
           input = node
         }} />
         <button type="submit">
-          Add Womble
+          POST
         </button>
       </form>
     </div>

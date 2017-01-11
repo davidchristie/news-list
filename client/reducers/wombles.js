@@ -3,7 +3,7 @@ const womble = (state = {}, action) => {
   case 'ADD_WOMBLE':
     return {
       id: action.id,
-      name: action.name,
+      url: action.url,
       completed: false
     }
   case 'TOGGLE_WOMBLE':

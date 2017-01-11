@@ -1,9 +1,9 @@
 let nextWombleId = 0
-export const addWomble = name => {
+export const addWomble = url => {
   return {
     type: 'ADD_WOMBLE',
     id: nextWombleId++,
-    name
+    url
   }
 }
 

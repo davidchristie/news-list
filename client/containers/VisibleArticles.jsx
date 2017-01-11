@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { toggleWomble } from '../actions'
-import Wombles from '../components/Wombles'
+import Articles from '../components/Articles'
 
 const getVisibleWombles = (wombles, filter) => {
   switch (filter) {
@@ -27,9 +27,9 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const VisibleTodoList = connect(
+const VisibleArticles = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Wombles)
+)(Articles)
 
-export default VisibleTodoList
+export default VisibleArticles

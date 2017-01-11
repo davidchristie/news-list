@@ -9,10 +9,8 @@ import App from './components/App'
 
 let store = createStore(reducer)
 
-store.dispatch(addWomble('Alice'))
-store.dispatch(addWomble('Bob'))
-store.dispatch(addWomble('Claire'))
-store.dispatch(addWomble('Dave'))
+store.dispatch(addWomble('https://www.theguardian.com/world/2017/jan/11/chamber-of-rats-mexico-parliaments-name-changed-in-google-maps-prank'))
+store.dispatch(addWomble('http://www.aljazeera.com/indepth/features/2017/01/india-love-hand-books-170108073151216.html'))
 
 // console.log('getState:', store.getState())
 

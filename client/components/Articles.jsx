@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
-import Womble from './Womble'
+import Article from './Article'
 
-const Wombles = ({ wombles, onWombleClick }) => (
+const Articles = ({ wombles, onWombleClick }) => (
   <ul>
-    {wombles.map(womble =>
-      <Womble
+    {wombles.reverse().map(womble =>
+      <Article
         key={womble.id}
         {...womble}
         onClick={() => onWombleClick(womble.id)}
@@ -13,13 +13,13 @@ const Wombles = ({ wombles, onWombleClick }) => (
   </ul>
 )
 
-Wombles.propTypes = {
+Articles.propTypes = {
   wombles: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     completed: PropTypes.bool.isRequired,
-    name: PropTypes.string.isRequired
+    url: PropTypes.string.isRequired
   }).isRequired).isRequired,
   onWombleClick: PropTypes.func.isRequired
 }
 
-export default Wombles
+export default Articles
