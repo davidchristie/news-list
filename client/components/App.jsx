@@ -1,9 +1,14 @@
 import React from 'react'
+import Footer from './Footer'
+import AddWomble from '../containers/AddWomble'
+import VisibleWombles from '../containers/VisibleWombles'
 
-export default React.createClass({
-  render() {
-    return (
-      <h1>React development has begun!</h1>
-    )
-  }
-})
+const App = () => (
+  <div>
+    <AddWomble />
+    <VisibleWombles />
+    <Footer />
+  </div>
+)
+
+export default App
