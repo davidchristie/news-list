@@ -1,8 +1,9 @@
-let nextWombleId = 0
-export const addWomble = url => {
+let nextArticleId = 0
+
+export const addArticle = url => {
   return {
-    type: 'ADD_WOMBLE',
-    id: nextWombleId++,
+    type: 'ADD_ARTICLE',
+    id: nextArticleId++,
     url
   }
 }
@@ -14,9 +15,9 @@ export const setVisibilityFilter = filter => {
   }
 }
 
-export const toggleWomble = id => {
+export const toggleArticle = id => {
   return {
-    type: 'TOGGLE_WOMBLE',
+    type: 'TOGGLE_ARTICLE',
     id
   }
 }

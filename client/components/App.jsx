@@ -1,13 +1,11 @@
 import React from 'react'
-import Footer from './Footer'
-import AddWomble from '../containers/AddWomble'
+import Header from './Header'
 import VisibleArticles from '../containers/VisibleArticles'
 
 const App = () => (
   <div>
-    <AddWomble />
+    <Header />
     <VisibleArticles />
-    <Footer />
   </div>
 )
 

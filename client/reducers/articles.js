@@ -1,12 +1,12 @@
-const womble = (state = {}, action) => {
+const article = (state = {}, action) => {
   switch (action.type) {
-  case 'ADD_WOMBLE':
+  case 'ADD_ARTICLE':
     return {
       id: action.id,
       url: action.url,
       completed: false
     }
-  case 'TOGGLE_WOMBLE':
+  case 'TOGGLE_ARTICLE':
     if (state.id !== action.id) {
       return state
     }
@@ -20,20 +20,20 @@ const womble = (state = {}, action) => {
   }
 }
 
-const wombles = (state = [], action) => {
+const articles = (state = [], action) => {
   switch (action.type) {
-  case 'ADD_WOMBLE':
+  case 'ADD_ARTICLE':
     return [
       ...state,
-      womble(null, action)
+      article(null, action)
     ]
-  case 'TOGGLE_WOMBLE':
+  case 'TOGGLE_ARTICLE':
     return state.map(t =>
-      womble(t, action)
+      article(t, action)
     )
   default:
     return state
   }
 }
 
-export default wombles
+export default articles

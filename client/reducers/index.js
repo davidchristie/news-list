@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
 import visibilityFilter from './visibilityFilter'
-import wombles from './wombles'
+import articles from './articles'
 
 export default combineReducers({
-  visibilityFilter,
-  wombles
+  articles,
+  visibilityFilter
 })
